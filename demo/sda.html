@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Scroll Animation Demo</title>
+    <style>
+        body {
+            position: relative;
+            height: 200vh;
+            display:grid;
+            place-items: center;
+        }
+
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: rotate ease-in-out;
+            animation-timeline: view();
+        }
+
+        .space {
+            height: 70vh;
+            background: grey;
+            width: 100%;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="space"></div>
+    <div class="animated-box"></div>
+    <div class="space"></div>
+</body>
+</html>
