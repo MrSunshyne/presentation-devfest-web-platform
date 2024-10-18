@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button popovertarget="mypopover">Toggle the popover</button>
+    <button popovertarget="mypopover2">Toggle the popover 2</button>
+    
+    <div id="mypopover" popover>Popover content</div>
+    <div id="mypopover2" popover>Popover content</div>
+
+    <style>
+        #mypopover::backdrop {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #mypopover2::backdrop {
+            background-color: rgba(200, 0, 0, 0.5);
+        }
+    </style>
+</body>
+</html>
